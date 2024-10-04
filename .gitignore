@@ -1,0 +1,19 @@
+# Node.js dependencies
+backend/node_modules/
+frontend/node_modules/
+
+# Environment variables
+backend/.env
+frontend/.env
+
+# Log files
+*.log
+
+# Build and cache directories
+frontend/build/
+frontend/.next/
+backend/.next/
+coverage/
+
+# OS-specific files
+.DS_Store
