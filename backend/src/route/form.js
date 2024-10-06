@@ -45,6 +45,7 @@ router.get("/sync", async (req, res) => {
         }));
     
         // Send data to SheetDB
+
         const response = await axios.post(process.env.SynchroniztionUrl, { data: formData });
     
         if (response.status === 201) {

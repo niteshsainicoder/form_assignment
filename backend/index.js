@@ -3,6 +3,8 @@
     // app.js (Main server file)
 import express from 'express';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
 const app = express();
 import  {router as formRoutes} from './src/route/form.js';
 
