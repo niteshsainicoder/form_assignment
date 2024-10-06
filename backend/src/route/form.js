@@ -45,7 +45,7 @@ router.get("/sync", async (req, res) => {
         }));
     
         // Send data to SheetDB
-        const response = await axios.post('https://sheetdb.io/api/v1/wd6x0fn4hv7ap', { data: formData });
+        const response = await axios.post(process.env.SynchroniztionUrl, { data: formData });
     
         if (response.status === 201) {
           // If the sync is successful, mark the forms as synced in the database
